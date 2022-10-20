@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Beverage Store</title>
+</head>
+<body>
+  <h1>Beverage Store</h1>
+  <form id="select-form">
+
+    <select id="beverage">
+      <option id="4">Coffee: $4</option>
+      <option id="2">Tea: $2</option>
+      <option id="5">Kombucha: $5</option>
+      <option id="1">Water: $1</option>
+    </select><br><br>
+    <h4>Shipping Address:</h4>
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="name"><br>
+    <label for="address">Address:</label>
+    <input id="address" type="text" name="address"><br>
+    <label for="city">City:</label>
+    <input id="city" type="text" name="city"><br>
+    <label for="state">State:</label>
+    <input id="state" type="text" name="state"><br>
+    <label for="zip">Zip:</label>
+    <input id="zip" type="text" name="zip"><br><br>
+    <h4>Payment Info:</h4>
+    <label>
+      <input type="radio" name="cardtype" value="visa" checked>
+      VISA
+    </label><br>
+    <label>
+      <input type="radio" name="cardtype" value="mc">
+      MasterCard
+    </label><br>
+    <label>
+      <input type="radio" name="cardtype" value="amex">
+      Amex
+    </label><br>
+    <label for="ccNumber">Credit Card Number:</label>
+    <input id="ccNumber" type="text" name="ccNumber"><br>
+
+    <button type="submit">Submit Selection</button>
+  </form>
+
+</body>
+</html>
