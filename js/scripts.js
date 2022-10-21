@@ -3,14 +3,31 @@
 // Business Logic
 
 function calcTotal() {
+  // Menu
+  const Coffee = 4;
+  const Tea = 2;
+  const Kombucha = 5;
+  const Water = 1;
+
   const item = document.getElementById("beverage").value;
   console.log("item=" + item);
   // Get item price
-  const itemPrice = document.getElementById("beverage").name;
+  let itemPrice;
+  if (item === "Coffee") {
+    itemPrice = Coffee;
+  } else if (item === "Tea") {
+    itemPrice = Tea;
+  } else if (item === "Kombucha") {
+    itemPrice = Kombucha;
+  } else if (item === "Water") {
+    itemPrice = Water;
+  }
   console.log("price=$" + itemPrice);
   // Apply discount
 
   // Get total
+
+
 };
 
 // UI Logic
